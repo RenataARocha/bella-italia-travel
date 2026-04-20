@@ -11,13 +11,13 @@
 <body>
 
     <header id="home">
-        <nav class="navbar">
-            <p class="navbar__logo">✈ Bella Italia</p>
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="#home" class="navbar__logo">✈ Bella Italia</a>
             <ul class="navbar__links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#minhaviagem">MinhaViagem</a></li>
-                <li><a href="#nosencontre">NosEncontre</a></li>
-                <li><a href="#conselhos">Conselhos</a></li>
+                <li><a href="#home" class="navbar__link">Início</a></li>
+                <li><a href="#minhaviagem" class="navbar__link">MinhaViagem</a></li>
+                <li><a href="#nosencontre" class="navbar__link">NosEncontre</a></li>
+                <li><a href="#conselhos" class="navbar__link">Conselhos</a></li>
             </ul>
         </nav>
     </header>
@@ -32,28 +32,144 @@
             </div>
         </section>
 
-        <section id="minhaviagem">
-            <h2>MinhaViagem</h2>
-            <p>Escolha o destino dos seus sonhos.</p>
-            <a href="#home">↑ Voltar ao topo</a>
+        <!-- SEÇÃO MINHAVIAGEM -->
+        <section class="secao" id="minhaviagem" aria-labelledby="titulo-minhaviagem">
+            <div class="container">
+
+                <h2 class="secao__titulo" id="titulo-minhaviagem">MinhaViagem</h2>
+                <p class="secao__subtitulo">Escolha o destino dos seus sonhos e deixe a Bella Italia cuidar de tudo.</p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600');"
+                            role="img" aria-label="Vista do Coliseu em Roma"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Roma</h3>
+                            <p class="card__texto">A Cidade Eterna com o Coliseu, o Vaticano e mais de 2.700 anos de
+                                história.</p>
+                            <div class="card__info">
+                                <span class="card__tag">7 dias</span>
+                                <span class="card__preco">a partir de R$ 8.990</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600');"
+                            role="img" aria-label="Canal veneziano com gôndolas em Veneza"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Veneza</h3>
+                            <p class="card__texto">Passeie de gôndola pelos canais encantadores de uma cidade única no
+                                mundo.</p>
+                            <div class="card__info">
+                                <span class="card__tag">5 dias</span>
+                                <span class="card__preco">a partir de R$ 7.490</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1543429776-2782fc8e3e91?w=600');"
+                            role="img" aria-label="Catedral de Santa Maria del Fiore em Florença"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Florença</h3>
+                            <p class="card__texto">O berço do Renascimento com obras de Da Vinci, Michelangelo e
+                                Botticelli.</p>
+                            <div class="card__info">
+                                <span class="card__tag">6 dias</span>
+                                <span class="card__preco">a partir de R$ 7.990</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=600');"
+                            role="img" aria-label="Colinas verdes da Toscana com vilarejo ao fundo"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Toscana</h3>
+                            <p class="card__texto">Vinhedos infinitos, vilas medievais e a culinária italiana mais
+                                autêntica.</p>
+                            <div class="card__info">
+                                <span class="card__tag">8 dias</span>
+                                <span class="card__preco">a partir de R$ 9.490</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600');"
+                            role="img" aria-label="Casas coloridas à beira do Lago di Como"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Lago di Como</h3>
+                            <p class="card__texto">Entre montanhas e águas cristalinas — o cenário perfeito para uma
+                                escapada romântica.</p>
+                            <div class="card__info">
+                                <span class="card__tag">4 dias</span>
+                                <span class="card__preco">a partir de R$ 6.990</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem"
+                            style="background-image: url('https://images.unsplash.com/photo-1533606688076-b6683a5f59f1?w=600');"
+                            role="img" aria-label="Vista panorâmica da Costa Amalfitana"></div>
+                        <div class="card__corpo">
+                            <h3 class="card__titulo">Costa Amalfitana</h3>
+                            <p class="card__texto">Penhascos, mar de esmeralda e vilarejos coloridos — uma das costas
+                                mais belas do mundo.</p>
+                            <div class="card__info">
+                                <span class="card__tag">6 dias</span>
+                                <span class="card__preco">a partir de R$ 8.490</span>
+                            </div>
+                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                        </div>
+                    </article>
+
+                </div><!-- /cards -->
+
+                <div class="secao__topo">
+                    <a href="#home" class="link-topo">↑ Voltar ao topo</a>
+                </div>
+
+            </div>
         </section>
 
-        <section id="nosencontre">
-            <h2>NosEncontre</h2>
-            <p>Uma equipe apaixonada pela Itália.</p>
-            <a href="#home">↑ Voltar ao topo</a>
+        <section class="secao" id="nosencontre">
+            <div class="container">
+                <h2 class="secao__titulo">NosEncontre</h2>
+                <p class="secao__subtitulo">Uma equipe apaixonada pela Itália.</p>
+                <div class="secao__topo">
+                    <a href="#home" class="link-topo">↑ Voltar ao topo</a>
+                </div>
+            </div>
         </section>
 
-        <section id="conselhos">
-            <h2>Conselhos</h2>
-            <p>Dicas essenciais para viajar pela Itália.</p>
-            <a href="#home">↑ Voltar ao topo</a>
+        <section class="secao secao--alt" id="conselhos">
+            <div class="container">
+                <h2 class="secao__titulo">Conselhos</h2>
+                <p class="secao__subtitulo">Dicas essenciais para viajar pela Itália.</p>
+                <div class="secao__topo">
+                    <a href="#home" class="link-topo">↑ Voltar ao topo</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2025 Bella Italia — Feito com ❤ à Itália.</p>
+        <p>© 2025 Bella Italia — Feito com ❤ e saudade da Itália.</p>
     </footer>
 
 </body>
