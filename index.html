@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bella Italia — Agência de Viagens</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -24,9 +24,12 @@
 
     <main>
 
-        <section class="banner">
-            <h1>Descubra a magia da Itália</h1>
-            <p>De Roma a Veneza — cada destino é uma obra de arte.</p>
+        <section class="banner" aria-label="Banner principal">
+            <div class="banner__overlay">
+                <h1 class="banner__titulo">Descubra a magia da Itália</h1>
+                <p class="banner__subtitulo">De Roma a Veneza — cada destino é uma obra de arte esperando por você.</p>
+                <a href="#minhaviagem" class="btn btn--primario">Explorar destinos</a>
+            </div>
         </section>
 
         <section id="minhaviagem">
