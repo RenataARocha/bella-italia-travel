@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf8f2;
+    color: #4a4540;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ce2b37;
+}
+
+.navbar__logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ce2b37;
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: #4a4540;
+}
+
+.navbar__links a:hover {
+    color: #ce2b37;
+}
+
+/* Banner */
+.banner {
+    background-color: #009246;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Seções */
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #ce2b37;
+    margin-bottom: 1rem;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #009246;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1410;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
