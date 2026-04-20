@@ -15,7 +15,6 @@ body {
     color: #4a4540;
 }
 
-/* Container */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -170,7 +169,7 @@ body {
     margin-top: 3rem;
 }
 
-/* Link voltar ao topo */
+/* Link topo */
 .link-topo {
     display: inline-block;
     color: #6b4f3a;
@@ -257,6 +256,82 @@ body {
     font-size: 0.9rem;
     font-weight: bold;
     color: #006d32;
+}
+
+/* NosEncontre */
+.meetup {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.meetup__texto p {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.meetup__lista {
+    list-style: none;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.meetup__lista li {
+    font-size: 0.97rem;
+    color: #4a4540;
+}
+
+.meetup__contato {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.meetup__contato h3 {
+    font-size: 1.3rem;
+    color: #ce2b37;
+}
+
+.meetup__contato address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.meetup__contato address a {
+    color: #006d32;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.meetup__contato address a:hover {
+    color: #ce2b37;
+}
+
+.meetup__horario {
+    font-size: 0.9rem;
+    color: #4a4540;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.meetup__horario strong {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b4f3a;
 }
 
 /* Footer */
