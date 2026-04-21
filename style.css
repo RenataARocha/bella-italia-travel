@@ -282,7 +282,6 @@ body {
 
 .meetup__lista li {
     font-size: 0.97rem;
-    color: #4a4540;
 }
 
 .meetup__contato {
@@ -334,10 +333,134 @@ body {
     color: #6b4f3a;
 }
 
+/* Conselhos */
+.dicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.dica {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #009246;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.dica:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    border-left-color: #ce2b37;
+}
+
+.dica__icone {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.dica__titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6b4f3a;
+    margin-bottom: 0.5rem;
+}
+
+.dica__texto {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    color: #4a4540;
+}
+
 /* Footer */
-footer {
+.footer {
     background-color: #1c1410;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 3.5rem;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #ffffff;
-    text-align: center;
-    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer__slogan {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+.footer__titulo {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1rem;
+}
+
+.footer__nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer__nav a,
+.footer__contato a {
+    font-size: 0.93rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer__nav a:hover,
+.footer__contato a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.footer__contato address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer__rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.35);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer__topo {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer__topo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
 }
