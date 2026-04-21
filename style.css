@@ -68,6 +68,67 @@ body {
     color: #ce2b37;
 }
 
+/* Botão hamburguer */
+.navbar__menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__menu-btn:hover {
+    background-color: #f5f0e8;
+}
+
+.navbar__menu-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #4a4540;
+    border-radius: 2px;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+.mobile-menu.aberto {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu__link {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #4a4540;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu__link:hover {
+    background-color: #f5f0e8;
+    color: #ce2b37;
+}
+
 /* Banner */
 .banner {
     min-height: 100vh;
@@ -463,4 +524,61 @@ body {
 .footer__topo:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
+}
+
+/* ============ RESPONSIVIDADE ============ */
+@media (max-width: 900px) {
+    .meetup {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__marca {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar {
+        padding: 1rem 1.25rem;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__menu-btn {
+        display: flex;
+    }
+
+    .banner__titulo {
+        font-size: 2rem;
+    }
+
+    .banner__subtitulo {
+        font-size: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dicas {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .footer__rodape {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+        padding: 1.25rem;
+    }
 }

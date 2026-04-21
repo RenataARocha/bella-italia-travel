@@ -14,13 +14,30 @@
     <header id="home">
         <nav class="navbar" aria-label="Navegação principal">
             <a href="#home" class="navbar__logo">✈ Bella Italia</a>
+
             <ul class="navbar__links">
                 <li><a href="#home" class="navbar__link">Início</a></li>
                 <li><a href="#minhaviagem" class="navbar__link">MinhaViagem</a></li>
                 <li><a href="#nosencontre" class="navbar__link">NosEncontre</a></li>
                 <li><a href="#conselhos" class="navbar__link">Conselhos</a></li>
             </ul>
+
+            <button class="navbar__menu-btn" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <ul>
+                <li><a href="#home" class="mobile-menu__link">Início</a></li>
+                <li><a href="#minhaviagem" class="mobile-menu__link">MinhaViagem</a></li>
+                <li><a href="#nosencontre" class="mobile-menu__link">NosEncontre</a></li>
+                <li><a href="#conselhos" class="mobile-menu__link">Conselhos</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -159,77 +176,60 @@
             </div>
         </section>
 
-        <!-- SEÇÃO CONSELHOS -->
         <section class="secao" id="conselhos" aria-labelledby="titulo-conselhos">
             <div class="container">
-
                 <h2 class="secao__titulo" id="titulo-conselhos">Conselhos</h2>
                 <p class="secao__subtitulo">Dicas essenciais de quem conhece a Itália de perto.</p>
-
                 <div class="dicas">
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">🗓</span>
                         <h3 class="dica__titulo">Melhor época para viajar</h3>
                         <p class="dica__texto">Primavera (abril–junho) e início do outono (setembro–outubro) são ideais
                             — clima agradável e menos turistas.</p>
                     </article>
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">🍝</span>
                         <h3 class="dica__titulo">Coma como um local</h3>
                         <p class="dica__texto">Fuja dos restaurantes em frente às atrações. Procure uma trattoria a pelo
                             menos duas ruas de distância.</p>
                     </article>
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">🎫</span>
                         <h3 class="dica__titulo">Reserve ingressos com antecedência</h3>
                         <p class="dica__texto">Coliseu, Galeria Uffizi e Museus do Vaticano esgotam semanas antes.
                             Reserve antes de embarcar!</p>
                     </article>
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">👗</span>
                         <h3 class="dica__titulo">Respeite o dress code</h3>
                         <p class="dica__texto">Igrejas e basílicas exigem ombros e joelhos cobertos. Leve um lenço na
                             mochila — você vai precisar.</p>
                     </article>
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">🚆</span>
                         <h3 class="dica__titulo">Use o trem</h3>
                         <p class="dica__texto">O Frecciarossa conecta as principais cidades em poucas horas. Pontual,
                             confortável e muito prático.</p>
                     </article>
-
                     <article class="dica">
                         <span class="dica__icone" aria-hidden="true">💬</span>
                         <h3 class="dica__titulo">Aprenda algumas palavras em italiano</h3>
                         <p class="dica__texto">Buongiorno, grazie e per favore abrem muitas portas. Os italianos adoram
                             quando turistas fazem o esforço!</p>
                     </article>
-
                 </div>
-
-                <div class="secao__topo">
-                    <a href="#home" class="link-topo">↑ Voltar ao topo</a>
-                </div>
-
+                <div class="secao__topo"><a href="#home" class="link-topo">↑ Voltar ao topo</a></div>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER COMPLETO -->
     <footer class="footer" role="contentinfo">
         <div class="container footer__grid">
-
             <div class="footer__marca">
                 <p class="footer__logo">✈ Bella Italia</p>
                 <p class="footer__slogan">L'Italia vi aspetta — A Itália te espera.</p>
             </div>
-
             <nav class="footer__nav" aria-label="Links de rodapé">
                 <h3 class="footer__titulo">Navegação</h3>
                 <ul>
@@ -239,7 +239,6 @@
                     <li><a href="#conselhos">Conselhos</a></li>
                 </ul>
             </nav>
-
             <div class="footer__contato">
                 <h3 class="footer__titulo">Contato</h3>
                 <address>
@@ -247,11 +246,9 @@
                     <p><a href="mailto:ciao@bellaitalia.com.br">ciao@bellaitalia.com.br</a></p>
                 </address>
             </div>
-
         </div>
-
         <div class="footer__rodape">
-            <p>© 2025 Bella Italia — Feito com ❤ e saudade da Itália.</p>
+            <p>© 2025 Bella Italia — Feito com ❤ à Itália.</p>
             <a href="#home" class="footer__topo" aria-label="Voltar ao topo">↑ Topo</a>
         </div>
     </footer>
