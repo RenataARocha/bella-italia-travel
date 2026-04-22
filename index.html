@@ -83,7 +83,7 @@
                     </article>
                     <article class="card">
                         <div class="card__imagem"
-                            style="background-image: url('https://images.unsplash.com/photo-1543429776-2782fc8e3e91?w=600');"
+                            style="background-image: url('https://i.pinimg.com/1200x/4b/1a/8d/4b1a8d9b1569c2af22efcb7fb82b110c.jpg');"
                             role="img" aria-label="Catedral de Florença"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Florença</h3>
@@ -122,7 +122,7 @@
                     </article>
                     <article class="card">
                         <div class="card__imagem"
-                            style="background-image: url('https://images.unsplash.com/photo-1533606688076-b6683a5f59f1?w=600');"
+                            style="background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600');"
                             role="img" aria-label="Costa Amalfitana"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Costa Amalfitana</h3>
@@ -247,11 +247,47 @@
                 </address>
             </div>
         </div>
+
+
         <div class="footer__rodape">
             <p>© 2025 Bella Italia — Feito com ❤ à Itália.</p>
             <a href="#home" class="footer__topo" aria-label="Voltar ao topo">↑ Topo</a>
         </div>
     </footer>
+
+    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalNome">
+        <div class="modal__conteudo">
+            <button class="modal__fechar" id="modalFechar" aria-label="Fechar modal">✕</button>
+
+            <div class="modal__imagem" id="modalImagem"></div>
+
+            <div class="modal__corpo">
+                <div class="modal__cabecalho">
+                    <h2 class="modal__titulo" id="modalNome"></h2>
+                    <div class="modal__tags">
+                        <span class="card__tag" id="modalDias"></span>
+                        <span class="card__preco" id="modalPreco"></span>
+                    </div>
+                </div>
+
+                <p class="modal__descricao" id="modalDescricao"></p>
+
+                <div class="modal__listas">
+                    <div>
+                        <h3 class="modal__subtitulo">O que você vai ver</h3>
+                        <ul class="modal__lista" id="modalDestaques"></ul>
+                    </div>
+                    <div>
+                        <h3 class="modal__subtitulo">O que está incluso</h3>
+                        <ul class="modal__lista" id="modalInclusos"></ul>
+                    </div>
+                </div>
+
+                <a href="#nosencontre" class="btn btn--primario modal__cta">Quero reservar este pacote</a>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
