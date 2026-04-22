@@ -526,6 +526,164 @@ body {
     color: #ffffff;
 }
 
+
+/*  MODAL  */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.modal.aberto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.modal__conteudo {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    animation: modalEntrar 0.3s ease;
+}
+
+@keyframes modalEntrar {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal__fechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__fechar:hover {
+    background-color: #ce2b37;
+    transform: scale(1.1);
+}
+
+.modal__imagem {
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal__corpo {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.modal__cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.modal__titulo {
+    font-size: 1.8rem;
+    color: #ce2b37;
+}
+
+.modal__tags {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.modal__descricao {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #4a4540;
+}
+
+.modal__listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.modal__subtitulo {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b4f3a;
+    margin-bottom: 0.75rem;
+}
+
+.modal__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.modal__lista li {
+    font-size: 0.93rem;
+    color: #4a4540;
+    line-height: 1.5;
+}
+
+.modal__cta {
+    text-align: center;
+    width: 100%;
+}
+
+/* Modal responsivo */
+@media (max-width: 680px) {
+    .modal__listas {
+        grid-template-columns: 1fr;
+    }
+
+    .modal__cabecalho {
+        flex-direction: column;
+    }
+
+    .modal__imagem {
+        height: 200px;
+    }
+
+    .modal__corpo {
+        padding: 1.5rem;
+    }
+}
+
+
 /* ============ RESPONSIVIDADE ============ */
 @media (max-width: 900px) {
     .meetup {
