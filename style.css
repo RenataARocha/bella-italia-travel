@@ -176,6 +176,8 @@ body {
     font-size: 0.95rem;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
+    border: none;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -526,9 +528,7 @@ body {
     color: #ffffff;
 }
 
-
-/*  MODAL  */
-
+/* ============ MODAL ============ */
 .modal {
     display: none;
     position: fixed;
@@ -664,26 +664,6 @@ body {
     width: 100%;
 }
 
-/* Modal responsivo */
-@media (max-width: 680px) {
-    .modal__listas {
-        grid-template-columns: 1fr;
-    }
-
-    .modal__cabecalho {
-        flex-direction: column;
-    }
-
-    .modal__imagem {
-        height: 200px;
-    }
-
-    .modal__corpo {
-        padding: 1.5rem;
-    }
-}
-
-
 /* ============ RESPONSIVIDADE ============ */
 @media (max-width: 900px) {
     .meetup {
@@ -696,6 +676,10 @@ body {
 
     .footer__marca {
         grid-column: 1 / -1;
+    }
+
+    .modal__listas {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -738,5 +722,17 @@ body {
         gap: 0.75rem;
         text-align: center;
         padding: 1.25rem;
+    }
+
+    .modal__cabecalho {
+        flex-direction: column;
+    }
+
+    .modal__imagem {
+        height: 200px;
+    }
+
+    .modal__corpo {
+        padding: 1.5rem;
     }
 }

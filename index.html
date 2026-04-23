@@ -42,6 +42,7 @@
 
     <main>
 
+        <!-- BANNER -->
         <section class="banner" aria-label="Banner principal">
             <div class="banner__overlay">
                 <h1 class="banner__titulo">Descubra a magia da Itália</h1>
@@ -50,11 +51,14 @@
             </div>
         </section>
 
+        <!-- MINHAVIAGEM -->
         <section class="secao" id="minhaviagem" aria-labelledby="titulo-minhaviagem">
             <div class="container">
                 <h2 class="secao__titulo" id="titulo-minhaviagem">MinhaViagem</h2>
                 <p class="secao__subtitulo">Escolha o destino dos seus sonhos e deixe a Bella Italia cuidar de tudo.</p>
+
                 <div class="cards">
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600');"
@@ -65,9 +69,11 @@
                                 história.</p>
                             <div class="card__info"><span class="card__tag">7 dias</span><span class="card__preco">a
                                     partir de R$ 8.990</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="roma"
+                                aria-label="Saber mais sobre Roma">Saber mais</button>
                         </div>
                     </article>
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600');"
@@ -78,66 +84,78 @@
                                 mundo.</p>
                             <div class="card__info"><span class="card__tag">5 dias</span><span class="card__preco">a
                                     partir de R$ 7.490</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="veneza"
+                                aria-label="Saber mais sobre Veneza">Saber mais</button>
                         </div>
                     </article>
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://i.pinimg.com/1200x/4b/1a/8d/4b1a8d9b1569c2af22efcb7fb82b110c.jpg');"
-                            role="img" aria-label="Catedral de Florença"></div>
+                            role="img" aria-label="Catedral de Florença ao entardecer"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Florença</h3>
                             <p class="card__texto">O berço do Renascimento com obras de Da Vinci, Michelangelo e
                                 Botticelli.</p>
                             <div class="card__info"><span class="card__tag">6 dias</span><span class="card__preco">a
                                     partir de R$ 7.990</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="florenca"
+                                aria-label="Saber mais sobre Florença">Saber mais</button>
                         </div>
                     </article>
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=600');"
-                            role="img" aria-label="Colinas da Toscana"></div>
+                            role="img" aria-label="Colinas verdes da Toscana"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Toscana</h3>
                             <p class="card__texto">Vinhedos infinitos, vilas medievais e a culinária italiana mais
                                 autêntica.</p>
                             <div class="card__info"><span class="card__tag">8 dias</span><span class="card__preco">a
                                     partir de R$ 9.490</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="toscana"
+                                aria-label="Saber mais sobre a Toscana">Saber mais</button>
                         </div>
                     </article>
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600');"
-                            role="img" aria-label="Lago di Como"></div>
+                            role="img" aria-label="Vista do Lago di Como"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Lago di Como</h3>
                             <p class="card__texto">Entre montanhas e águas cristalinas — o cenário perfeito para uma
                                 escapada romântica.</p>
                             <div class="card__info"><span class="card__tag">4 dias</span><span class="card__preco">a
                                     partir de R$ 6.990</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="como"
+                                aria-label="Saber mais sobre o Lago di Como">Saber mais</button>
                         </div>
                     </article>
+
                     <article class="card">
                         <div class="card__imagem"
                             style="background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600');"
-                            role="img" aria-label="Costa Amalfitana"></div>
+                            role="img" aria-label="Vista panorâmica da Costa Amalfitana"></div>
                         <div class="card__corpo">
                             <h3 class="card__titulo">Costa Amalfitana</h3>
                             <p class="card__texto">Penhascos, mar de esmeralda e vilarejos coloridos — uma das costas
                                 mais belas do mundo.</p>
                             <div class="card__info"><span class="card__tag">6 dias</span><span class="card__preco">a
                                     partir de R$ 8.490</span></div>
-                            <a href="#conselhos" class="btn btn--secundario">Saber mais</a>
+                            <button class="btn btn--secundario btn-saberMais" data-destino="amalfi"
+                                aria-label="Saber mais sobre a Costa Amalfitana">Saber mais</button>
                         </div>
                     </article>
+
                 </div>
+
                 <div class="secao__topo"><a href="#home" class="link-topo">↑ Voltar ao topo</a></div>
             </div>
         </section>
 
+        <!-- NOSENCONTRE -->
         <section class="secao secao--alt" id="nosencontre" aria-labelledby="titulo-nosencontre">
             <div class="container">
                 <h2 class="secao__titulo" id="titulo-nosencontre">NosEncontre</h2>
@@ -176,6 +194,7 @@
             </div>
         </section>
 
+        <!-- CONSELHOS -->
         <section class="secao" id="conselhos" aria-labelledby="titulo-conselhos">
             <div class="container">
                 <h2 class="secao__titulo" id="titulo-conselhos">Conselhos</h2>
@@ -224,6 +243,7 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer" role="contentinfo">
         <div class="container footer__grid">
             <div class="footer__marca">
@@ -247,14 +267,13 @@
                 </address>
             </div>
         </div>
-
-
         <div class="footer__rodape">
             <p>© 2025 Bella Italia — Feito com ❤ à Itália.</p>
             <a href="#home" class="footer__topo" aria-label="Voltar ao topo">↑ Topo</a>
         </div>
     </footer>
 
+    <!-- MODAL -->
     <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalNome">
         <div class="modal__conteudo">
             <button class="modal__fechar" id="modalFechar" aria-label="Fechar modal">✕</button>
@@ -283,7 +302,7 @@
                     </div>
                 </div>
 
-                <a href="#nosencontre" class="btn btn--primario modal__cta">Quero reservar este pacote</a>
+                <a href="#nosencontre" class="btn btn--primario modal__cta" id="modalCta">Quero reservar este pacote</a>
             </div>
         </div>
     </div>
