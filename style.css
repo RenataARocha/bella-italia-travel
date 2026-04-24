@@ -38,14 +38,28 @@ body {
 
 .navbar__logo {
     font-size: 1.3rem;
-    font-weight: bold;
-    color: #ce2b37;
+    font-weight: 700;
     text-decoration: none;
-    transition: color 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+
+    transition: all 0.3s ease;
 }
 
 .navbar__logo:hover {
     color: #9e1f29;
+    transform: scale(1.05);
+}
+
+.navbar__logo:hover .logo-icon {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.navbar__logo:hover .logo-text {
+    color: #a61e2a;
 }
 
 .navbar__links {
@@ -67,6 +81,27 @@ body {
     background-color: #f5f0e8;
     color: #ce2b37;
 }
+
+
+.logo-text {
+    color: #ce2b37;
+
+}
+
+.logo-icon {
+    font-size: 1.35rem;
+    color: #008C45;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+    position: relative;
+    top: -2px;
+    /* mais seguro */
+}
+
 
 /* Botão hamburguer */
 .navbar__menu-btn {
@@ -663,6 +698,7 @@ body {
     text-align: center;
     width: 100%;
 }
+
 
 /* ============ RESPONSIVIDADE ============ */
 @media (max-width: 900px) {
